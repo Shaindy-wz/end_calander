@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  font-family: "Assistant", sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+} */
+
+/* טופס קבוע בצד שמאל */
+.form-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 3%;
+  background: #f0f5f0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #d0d7de;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* תוויות במרכז */
+/* label {
+  display: block;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #4a5568;
+  width: 100%;
+} */
+
+/* אינפוטים וסלקטים */
+select,
+input[type="text"],
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 24px;
+  border: none;
+  border-bottom: 1px solid #c2c8ce;
+  font-size: 1rem;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  color: #73767d;
+}
+
+select:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: 2px solid #3182ce;
+  background-color: #f7fafc;
+}
+
+/* כפתור */
+button {
+  background-color: #4caf50;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 14px;
+  border-radius: 4px;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #426b43;
+}
+
+/* תוכן העמוד בצד ימין */
+main {
+  margin-left: 25vw;
+  padding: 3%;
+}
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #4caf50;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #707470;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}

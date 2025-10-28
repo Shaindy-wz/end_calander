@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Damion|Muli:400,600");
+body {
+  font-family: "Muli", sans-serif;
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/geometry2.png");
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: #ffffff;
+}
+h2 {
+  font-family: "Damion", cursive;
+  font-weight: 400;
+  color: #4caf50;
+  font-size: 35px;
+  text-align: center;
+  position: relative;
+}
+h2:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  top: 22px;
+  background: #4caf50;
+  height: 1px;
+}
+h2 i {
+  font-style: normal;
+  background: #fff;
+  position: relative;
+  padding: 10px;
+}
+
+/* עיצוב שדה */
+.input-effect {
+  margin-bottom: 25px;
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.input-effect input[type="text"],
+.input-effect input[type="color"] {
+  width: 100%;
+  padding: 14px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-effect input[type="text"]:focus,
+.input-effect input[type="color"]:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 3px #4caf50;
+  outline: none;
+}
+
+/* תווית צפה */
+.input-effect label {
+  position: absolute;
+  top: -12px;
+  left: 14px;
+  background: #ffffff;
+  padding: 0 6px;
+  font-size: 0.75rem;
+  color: #4caf50;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+
+/* קו תחתון */
+.focus-border {
+  display: none;
+}
+
+/* צבע קלט */
+input[type="color"] {
+  height: 42px;
+  padding: 4px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* רווח בין האלמנטים */
+.col-3 {
+  margin-bottom: 30px;
+}
+.contianer {
+  margin-top: 10vh;
+  margin-right: 38%;
+}
+button{
+  width: 37%;
+    margin-right: 2%;
+}
+/* .contianer{
+  text-align: center;
+} */
